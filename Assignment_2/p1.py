@@ -8,6 +8,7 @@ CSE A
 
 import random
 #--------------initializing list with different variable types---------------
+
 my_list = [2,3.5,50000000000000000,'c',"soumya",5.7,21,(12,25.0,"NITW")]
 print("\nPrinting the list\n")
 print(my_list)
