@@ -13,7 +13,7 @@ for i in range(n):
 print("Printing the array : ", arr)
 
 #----------------------------replacing the even with 0--------------------------------------------------
-
+print()
 arr_copy = np.copy(arr)
 
 for i in range(len(arr_copy)):
@@ -24,7 +24,7 @@ print("Printing after replacing the even elements with 0: \n")
 print(arr_copy)
 
 #---------------------------extract primes---------------------------------
-
+print()
 arr_copy = np.copy(arr)
 filtered_prime = filter(check_primality,arr_copy)
 
@@ -35,7 +35,7 @@ for i in filtered_prime:
 print()
 
 #------------------------------------convert 1D to 2d----------------------------------------
-
+print()
 arr_copy = np.copy(arr)
 arr_copy = arr_copy.reshape([2,-1])
 
@@ -43,19 +43,19 @@ print("Printing the array after converting to a 2D array with 2 rows ")
 print(arr_copy, end="\n\n")
 
 #-------------------index in the sorted array---------------------------
-
+print()
 arr_copy = np.copy(arr)
 print("Printing the sorted indices")
 print(np.argsort(arr_copy))
 
 #------------------------binary array to boolean array---------------------------
-
+print()
 arr = np.array([1,0,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1])
 print("Printing the binary array : ", arr)
 print("Printing the array after covertiont to a boolean array : \n", arr.astype(dtype=bool))
 
 #------------------------------spliting array-------------------------------------
-
+print()
 arr = np.array([i for i in map(int, input("Enter 10 elements : ").split(' '))])
 print("Printing the array : ", arr)
 
@@ -67,3 +67,4 @@ print("Printing the splitted arrays : ")
 print(a)
 print(b)
 print(c)
+print()
