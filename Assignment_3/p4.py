@@ -1,40 +1,5 @@
 import numpy as np
-
-def BS_recursive(arr, ele, low, high):
-
-    if low <= high:
-        mid = (high+low)//2 
-
-        if(arr[mid] == ele): #element found, return the index
-            return mid
-        
-        elif arr[mid] > ele:
-            return BS_recursive(arr,ele,low,mid-1) # check the left half
-        else:
-            return BS_recursive(arr,ele,mid+1,high) #check the right half
-    
-    else:
-        return -1 # return -1 for the not found case
-
-def BS_iterative(arr,ele):
-
-    low = mid = 0
-    high = len(arr) - 1
-
-    while low <= high:
-
-        mid = (high+low)//2 
-
-        if arr[mid] == ele: #element found, return the index
-            return mid
-        
-        elif arr[mid] > ele:  # check the left half
-            high = mid-1
-        
-        else:                    # check the right half
-            low = mid+1 
-    
-    return -1 #return -1 for the not found case
+from utils import BS_iterative, BS_recursive
 
 
 if __name__ == "__main__":
@@ -42,14 +7,14 @@ if __name__ == "__main__":
     size = int(input("Enter the number of elements in the array... "))
     arr = []
     print("Keep entering the elements...\n")
-    for i in range(size):
+    for i in range(size): #taking input of array
         element = int(input())
         arr.append(element)
     
     print("\nPrinting the unsorted array...")
     print(arr)
 
-    arr.sort()
+    arr.sort() #sort the array for binary search
     print("Printing the sorted array...")
     print(arr)
 
