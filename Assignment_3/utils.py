@@ -1,4 +1,4 @@
-def check_primality(num):
+def check_primality(num): #checks if a number is prime or not
     primality = True
     i = 2
     upperlimit = num//i
@@ -19,7 +19,7 @@ def check_primality(num):
     
     return primality
 
-def BS_recursive(arr, ele, low, high):
+def BS_recursive(arr, ele, low, high): #binary search recursive
 
     if low <= high:
         mid = (high+low)//2 
@@ -35,7 +35,7 @@ def BS_recursive(arr, ele, low, high):
     else:
         return -1 # return -1 for the not found case
 
-def BS_iterative(arr,ele):
+def BS_iterative(arr,ele): #binary search iterative
 
     low = mid = 0
     high = len(arr) - 1
@@ -55,7 +55,7 @@ def BS_iterative(arr,ele):
     
     return -1 #return -1 for the not found case
 
-def bubbleSort(arr):
+def bubbleSort(arr): #bubble sort
     n = len(arr)
     count = 1
     # Traverse through all array elements
