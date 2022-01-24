@@ -1,3 +1,6 @@
+import numpy as np
+import random
+
 def check_primality(num): #checks if a number is prime or not
     primality = True
     i = 2
@@ -75,3 +78,6 @@ def bubbleSort(arr): #bubble sort
             # than the next element
             if arr[j] > arr[j + 1] :
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+def sum_matrices(arr_a, arr_b): #summation of two numpy matrices
+    return arr_a+arr_b

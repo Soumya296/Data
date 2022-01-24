@@ -1,7 +1,5 @@
 import numpy as np
-
-def sum_matrices(arr_a, arr_b):
-    return arr_a+arr_b
+from utils import sum_matrices
 
 if __name__ == "__main__":
 
