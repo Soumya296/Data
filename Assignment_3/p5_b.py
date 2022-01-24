@@ -1,4 +1,4 @@
-from p1 import check_primality
+from utils import check_primality
 import random
 import numpy as np
 
@@ -42,4 +42,28 @@ arr_copy = arr_copy.reshape([2,-1])
 print("Printing the array after converting to a 2D array with 2 rows ")
 print(arr_copy, end="\n\n")
 
-#
+#-------------------index in the sorted array---------------------------
+
+arr_copy = np.copy(arr)
+print("Printing the sorted indices")
+print(np.argsort(arr_copy))
+
+#------------------------binary array to boolean array---------------------------
+
+arr = np.array([1,0,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,0,1,1])
+print("Printing the binary array : ", arr)
+print("Printing the array after covertiont to a boolean array : \n", arr.astype(dtype=bool))
+
+#------------------------------spliting array-------------------------------------
+
+arr = np.array([i for i in map(int, input("Enter 10 elements : ").split(' '))])
+print("Printing the array : ", arr)
+
+a = arr[:2]
+b = arr[2:4]
+c = arr[4:]
+
+print("Printing the splitted arrays : ")
+print(a)
+print(b)
+print(c)
